@@ -1,0 +1,15 @@
+
+//definindo o valor dos estados
+`define INVALID 2'b00
+`define SHARED 2'b01
+`define EXCLUSIVE 2'b10
+`define MODIFIED 2'b11
+ 
+`define READ_MISS  2'b10
+`define READ_HIT  2'b11
+`define WRITE_MISS  2'b00
+`define WRITE_HIT  2'b01
+
+`define WRITE_MISS_ON_BUS 3'b001
+`define READ_MISS_ON_BUS 3'b010
+`define INVALIDATE_ON_BUS 3'b011
