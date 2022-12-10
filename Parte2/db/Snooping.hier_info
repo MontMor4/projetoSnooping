@@ -1,0 +1,19 @@
+|Emissor
+clock => writeBack~reg0.CLK
+clock => mensagemBus[0]~reg0.CLK
+clock => mensagemBus[1]~reg0.CLK
+clock => mensagemBus[2]~reg0.CLK
+clock => estado~2.DATAIN
+write => Equal0.IN2
+write => Equal1.IN2
+write => Decoder0.IN0
+write => Selector6.IN2
+hit => Equal0.IN3
+hit => Equal1.IN3
+hit => Decoder0.IN1
+mensagemBus[0] <= mensagemBus[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mensagemBus[1] <= mensagemBus[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+mensagemBus[2] <= mensagemBus[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+writeBack <= writeBack~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
